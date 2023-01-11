@@ -13,6 +13,7 @@ class League:
         self.results_data_df = pd.DataFrame(columns=self.result_col_lbl)
         self.player_col_lbl = ['name', 'faction', 'notes']
         self.player_data_df = pd.DataFrame(columns=self.player_col_lbl)
+        self.add_player(name='none', faction='', note='null player for bye result etc')
 
     def load_league_data(self) -> bool:
         data_loaded = False
@@ -164,21 +165,22 @@ class League:
         record_ls = []
 
         for player, frame in standings_df_group:
-            player_ls.append(player)
-            league_pts_ls.append(frame['league pts'].sum())
-            game_pts_ls.append(frame['pts for'].sum())
-            played_ls.append(len(frame['result'].to_list()))
-            wins_ls.append(frame.loc[frame['result'] == 'win']['player'].count())
-            draws_ls.append(frame.loc[frame['result'] == 'draw']['player'].count())
-            losses_ls.append(frame.loc[frame['result'] == 'loss']['player'].count())
-            record_ls.append("")
-            for result in frame['result'].to_list():
-                if result == 'win':
-                    record_ls[-1] += 'W '
-                if result == 'draw':
-                    record_ls[-1] += 'D '
-                if result == 'loss':
-                    record_ls[-1] += 'L '
+            if player != 'none':
+                player_ls.append(player)
+                league_pts_ls.append(frame['league pts'].sum())
+                game_pts_ls.append(frame['pts for'].sum())
+                played_ls.append(len(frame['result'].to_list()))
+                wins_ls.append(frame.loc[frame['result'] == 'win']['player'].count())
+                draws_ls.append(frame.loc[frame['result'] == 'draw']['player'].count())
+                losses_ls.append(frame.loc[frame['result'] == 'loss']['player'].count())
+                record_ls.append("")
+                for result in frame['result'].to_list():
+                    if result == 'win':
+                        record_ls[-1] += 'W '
+                    if result == 'draw':
+                        record_ls[-1] += 'D '
+                    if result == 'loss':
+                        record_ls[-1] += 'L '
 
         standings_df = pd.DataFrame(data=zip(player_ls,
                                              league_pts_ls,
@@ -258,3 +260,6 @@ class League:
         player_record_df = pd.concat(objs=[player_record_df, blank_row_df])
 
         return player_record_df
+
+
+        ## add function to get all player records
