@@ -1,5 +1,5 @@
 player,pos,league points,game points,played,wins,draws,losses,record
-player_a_name,1,9,300,3,3,0,0,W W W 
-player_b_name,2,6,200,2,2,0,0,W W 
-player_c_name,3,3,100,3,1,0,2,W L L 
-player_d_name,4,0,0,3,0,0,3,L L L 
+player_a_name,1,6,200,2,2,0,0,W W 
+player_b_name,2,3,100,2,1,0,1,L W 
+player_c_name,3,3,100,2,1,0,1,W L 
+player_d_name,4,0,0,2,0,0,2,L L 

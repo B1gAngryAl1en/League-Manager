@@ -213,12 +213,12 @@ class League:
 
         return standings_df
 
-    def get_player_record(self, player_name) -> pd.DataFrame:
+    def get_player_record(self, player_name, blank_row=True) -> pd.DataFrame:
         records_df = self.results_data_df.copy()
 
         records_df_group = records_df.groupby('player')
-
         player_record_df = records_df_group.get_group(player_name).copy()
+
         player_record_df.sort_values(by='round', inplace=True, ignore_index=True)
 
         player_record_df['league pts'] = player_record_df['result'].map(self.league_points_dict)
@@ -256,10 +256,20 @@ class League:
 
         player_record_df = player_record_df.reindex(columns=player_record_cols)
 
-        blank_row_df = pd.DataFrame(data=[['']*len(player_record_cols)], columns=player_record_cols)
-        player_record_df = pd.concat(objs=[player_record_df, blank_row_df])
+        if blank_row:
+            blank_row_df = pd.DataFrame(data=[['']*len(player_record_cols)], columns=player_record_cols)
+            player_record_df = pd.concat(objs=[player_record_df, blank_row_df])
 
         return player_record_df
 
+    def get_all_player_records(self) -> pd.DataFrame:
 
-        ## add function to get all player records
+        records_df_ls = []
+
+        for player in self.list_players():
+            if player != 'none':
+                records_df_ls.append(self.get_player_record(player_name=player))
+
+        records_df = pd.concat(objs=records_df_ls)
+
+        return records_df

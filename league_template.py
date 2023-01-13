@@ -19,7 +19,7 @@ players = [['player_a_name', 'player_a_team_name', 'player_a_note'],
 for player in players:
     if not league.add_player(name=player[0], faction=player[1], note=player[2]):
         print(f"error: player {player} not added")
-league.get_all_player_data().to_csv(filename+"_player_data.csv", index=False)
+
 
 # round 1 games, list of lists [game, player a, player a score, player b, player b score]
 rnd_1 = [[1, 'player_a_name', 100, 'none', 0],
@@ -47,24 +47,15 @@ for rnd, game_round in enumerate(rounds):
         if result != 'result added':
             print(f"error: round: {rnd+1}, game: {game}, - {result}")
 
+# export player data
+league.get_all_player_data().to_csv(filename+"_player_data.csv", index=False)
+
 # export standings
 league.get_standings().to_csv(filename+"_standings.csv", index=False)
 
 # export all results
 league.get_all_result_data().to_csv(filename+"_all_results.csv", index=False)
 
-# get player records, combine into a single dataframe and export
-# move this to a function in League
-df_init = False
-records_df = pd.DataFrame
-for player in league.list_players():
-    if player != 'none':
-        if not df_init:
-            records_df = league.get_player_record(player)
-            df_init = True
-        else:
-            records_df = pd.concat(objs=[records_df, league.get_player_record(player)])
-
 # export player records
-records_df.to_csv(filename+"_records.csv", index=False)
+league.get_all_player_records().to_csv(filename+"_records.csv", index=False)
 
