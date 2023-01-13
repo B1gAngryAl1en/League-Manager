@@ -3,5 +3,5 @@ round,game,played,player_a,player_a_sc,player_b,player_b_sc
 1,2,y,player_c_name,100,player_d_name,0
 2,1,y,player_a_name,100,player_c_name,0
 2,2,y,player_b_name,100,player_d_name,0
-3,1,,player_a_name,100,player_d_name,0
-3,2,,player_b_name,100,player_c_name,0
+3,1,y,player_a_name,73,player_d_name,53
+3,2,y,player_b_name,89,player_c_name,21

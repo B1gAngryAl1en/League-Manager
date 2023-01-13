@@ -7,3 +7,7 @@ round,game,player,pts for,pts against,delta,result
 2,1,player_c_name,0,100,-100,loss
 2,2,player_b_name,100,0,100,win
 2,2,player_d_name,0,100,-100,loss
+3,1,player_a_name,73,53,20,win
+3,1,player_d_name,53,73,-20,loss
+3,2,player_b_name,89,21,68,win
+3,2,player_c_name,21,89,-68,loss
