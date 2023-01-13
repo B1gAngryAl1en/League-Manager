@@ -1,4 +1,4 @@
-# Standings
+# League data
 
 [Standings](test_league_standings.csv)
 

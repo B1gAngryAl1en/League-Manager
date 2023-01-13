@@ -1,0 +1,7 @@
+Round,Game,Played,Player,Score,Player,Score
+1,1,y,player_a_name,100,player_b_name,0
+1,2,y,player_c_name,100,player_d_name,0
+2,1,y,player_a_name,100,player_c_name,0
+2,2,y,player_b_name,100,player_d_name,0
+3,1,y,player_a_name,100,player_d_name,0
+3,2,y,player_b_name,100,player_c_name,0
