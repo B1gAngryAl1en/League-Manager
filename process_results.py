@@ -5,8 +5,14 @@ from League import League
 # set the league name
 league_name = "test league"
 
+# set league points by result type
+league_pts = {'win': 3,
+              'draw': 1,
+              'loss': 0}
+
 # set up league instance
-league = League(name=league_name, win_pts=3, draw_pts=1, loss_pts=0)
+league = League(name=league_name,
+                win_pts=league_pts['win'], draw_pts=league_pts['draw'], loss_pts=league_pts['loss'])
 
 # get player list and add players
 players_df = pd.read_csv('input_data/player_list.csv')
@@ -49,9 +55,15 @@ standings_df.to_csv(f'output_data/{filename}_standings.csv', index=False)
 all_results_df.to_csv(f'output_data/{filename}_all_results.csv', index=False)
 player_records_df.to_csv(f'output_data/{filename}_player_records.csv', index=False)
 
-# generate a readme file
+# generate an update readme file
 player_ls = standings_df['player'].to_list()
 points_ls = standings_df['league points'].to_list()
 
-for idx, player in enumerate(player_ls):
-    print(f"{player} - {points_ls[idx]}")
+with open('input_data/readme_content.md', 'r') as file:
+    readme_content = file.read()
+
+with open('readme.md', 'w') as file:
+    file.write(f'# {league_name} summary:\n\n')
+    file.write('Place holder for league summary\n\n')
+    file.write(readme_content)
+
