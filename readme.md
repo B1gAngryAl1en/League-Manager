@@ -1,9 +1,9 @@
 # League data
 
-[Standings](test_league_standings.csv)
+[Standings](output_data/test-league_standings.csv)
 
-[Player records](test_league_records.csv)
+[Player records](outpit_data/test-league_records.csv)
 
-[Player list](test_league_player_data.csv)
+[Player list](output_data/test-league_player_data.csv)
 
-[All results](test_league_all_results.csv)
+[All results](output_data/test-league_all_results.csv)
