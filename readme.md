@@ -7,7 +7,3 @@
 [Player list](test_league_player_data.csv)
 
 [All results](test_league_all_results.csv)
-
-
-
-

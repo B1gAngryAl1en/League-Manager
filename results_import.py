@@ -43,7 +43,8 @@ for (idx, row) in results_data_df.iterrows():
 league.get_all_player_data().to_csv(filename+"_player_data.csv", index=False)
 
 # export standings
-league.get_standings().to_csv(filename+"_standings.csv", index=False)
+standings = league.get_standings()
+standings.to_csv(filename+"_standings.csv", index=False)
 
 # export all results
 league.get_all_result_data().to_csv(filename+"_all_results.csv", index=False)
@@ -51,3 +52,8 @@ league.get_all_result_data().to_csv(filename+"_all_results.csv", index=False)
 # export player records
 league.get_all_player_records().to_csv(filename+"_records.csv", index=False)
 
+player_ls = standings['player'].to_list()
+points_ls = standings['league points'].to_list()
+
+for idx, player in enumerate(player_ls):
+    print(f"{player} - {points_ls[idx]}")
