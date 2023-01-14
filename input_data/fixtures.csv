@@ -1,0 +1,9 @@
+date,round,game,player_a,player_a_sc,player_b,player_b_sc,played
+01/01/23,1,1,player_a_name,100,player_b_name,0,y
+,1,2,player_c_name,100,player_d_name,0,y
+,,,,,,,
+02/01/23,2,1,player_a_name,100,player_c_name,0,y
+,2,2,player_b_name,100,player_d_name,0,y
+,,,,,,,
+03/01/23,3,1,player_a_name,73,player_d_name,53,y
+,3,2,player_b_name,89,player_c_name,21,y

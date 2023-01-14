@@ -2,12 +2,7 @@ import pandas as pd
 
 from League import League
 
-# set the game results file name
-game_results_file = "test_league_game_results.csv"
-
-# set the league name
 league_name = "test_league"
-filename = league_name.replace(" ", "").lower()
 
 # set up league, pass win_pts, draw_pts  and loss_pts args to override defaults (3,1,0)
 league = League(name=league_name)
@@ -23,7 +18,7 @@ for player in players:
         print(f"error: player {player} not added")
 
 # get game results
-results_data_df = pd.read_csv(game_results_file)
+results_data_df = pd.read_csv('input_data/fixtures.csv')
 
 for (idx, row) in results_data_df.iterrows():
     if row.loc['played'] == 'y':
