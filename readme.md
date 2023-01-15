@@ -1,4 +1,7 @@
-# test league current standings
+# test league
+
+[Fixtures and results](input_data/fixtures.csv)
+
 |Player|played|league pts|game pts|
 |:---:|:---:|:---:|:---:|
 |player_a_name|3|9|273.0|
@@ -12,7 +15,7 @@
 [Player list and data](output_data/test-league_player_data.csv), [Raw results data](output_data/test-league_all_results.csv)
 
 
-last updated Sunday 15 January 02:16
+last updated Sunday 15 January 10:49
 # League manager
 
 ## Description

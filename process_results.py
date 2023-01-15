@@ -66,7 +66,8 @@ with open('input_data/readme_content.md', 'r') as file:
     readme_content = file.read()
 
 with open('readme.md', 'w') as file:
-    file.write(f'# {league_name} current standings\n')
+    file.write(f'# {league_name}\n\n')
+    file.write('[Fixtures and results](input_data/fixtures.csv)\n\n')
     file.write('|Player|played|league pts|game pts|\n')
     file.write('|:---:|:---:|:---:|:---:|\n')
 
