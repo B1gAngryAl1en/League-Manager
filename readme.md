@@ -5,8 +5,13 @@
 |player_b_name|3|6|189.0|
 |player_c_name|3|3|121.0|
 |player_d_name|3|0|53.0|
+[Full standings](output_data/test-league_standings.csv), 
+[Player performance records](output_data/test-league_player_records.csv)
 
-last updated Sunday 15 January 01:22
+[Player list and data](output_data/test-league_player_data.csv), [Raw results data](output_data/test-league_all_results.csv)
+
+
+last updated Sunday 15 January 01:33
 # League manager
 
 ## Description

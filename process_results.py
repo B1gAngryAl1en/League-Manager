@@ -73,6 +73,11 @@ with open('readme.md', 'w') as file:
     for idx, player in enumerate(player_ls):
         file.write(f'|{player}|{played_ls[idx]}|{league_points_ls[idx]}|{game_pts_ls[idx]}|\n')
 
+    file.write(f'[Full standings](output_data/{filename}_standings.csv), \n')
+    file.write(f'[Player performance records](output_data/{filename}_player_records.csv)\n\n')
+    file.write(f'[Player list and data](output_data/{filename}_player_data.csv), ')
+    file.write(f'[Raw results data](output_data/{filename}_all_results.csv)\n\n')
+
     file.write(f'\nlast updated {datetime.now().strftime("%A %d %B %H:%M")}\n')
 
     file.write(readme_content)
