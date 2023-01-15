@@ -1,6 +1,7 @@
 import pandas as pd
 
 from League import League
+from datetime import datetime
 
 # set the league name
 league_name = "test league"
@@ -57,13 +58,21 @@ player_records_df.to_csv(f'output_data/{filename}_player_records.csv', index=Fal
 
 # generate an update readme file
 player_ls = standings_df['player'].to_list()
-points_ls = standings_df['league points'].to_list()
+played_ls = standings_df['played'].to_list()
+league_points_ls = standings_df['league points'].to_list()
+game_pts_ls = standings_df['game points'].to_list()
 
 with open('input_data/readme_content.md', 'r') as file:
     readme_content = file.read()
 
 with open('readme.md', 'w') as file:
-    file.write(f'# {league_name} summary:\n\n')
-    file.write('Place holder for league summary\n\n')
-    file.write(readme_content)
+    file.write(f'# {league_name} current standings\n')
+    file.write('|Player|played|league pts|game pts|\n')
+    file.write('|:---:|:---:|:---:|:---:|\n')
 
+    for idx, player in enumerate(player_ls):
+        file.write(f'|{player}|{played_ls[idx]}|{league_points_ls[idx]}|{game_pts_ls[idx]}|\n')
+
+    file.write(f'last updated {datetime.now().strftime("%A %d %B %H:%M")}\n')
+
+    file.write(readme_content)
