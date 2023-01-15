@@ -81,6 +81,9 @@ class League:
         player_a_result = ""
         player_b_result = ""
 
+        pl_a = pl_a.lower()
+        pl_b = pl_b.lower()
+
         if self.check_for_result(rnd=rnd, game=game):
             result_added = "result already exists"
 

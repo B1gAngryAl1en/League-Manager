@@ -12,7 +12,7 @@
 [Player list and data](output_data/test-league_player_data.csv), [Raw results data](output_data/test-league_all_results.csv)
 
 
-last updated Sunday 15 January 01:35
+last updated Sunday 15 January 02:16
 # League manager
 
 ## Description
