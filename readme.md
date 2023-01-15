@@ -5,7 +5,8 @@
 |player_b_name|3|6|189.0|
 |player_c_name|3|3|121.0|
 |player_d_name|3|0|53.0|
-last updated Sunday 15 January 01:18
+
+last updated Sunday 15 January 01:22
 # League manager
 
 ## Description

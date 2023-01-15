@@ -73,6 +73,6 @@ with open('readme.md', 'w') as file:
     for idx, player in enumerate(player_ls):
         file.write(f'|{player}|{played_ls[idx]}|{league_points_ls[idx]}|{game_pts_ls[idx]}|\n')
 
-    file.write(f'last updated {datetime.now().strftime("%A %d %B %H:%M")}\n')
+    file.write(f'\nlast updated {datetime.now().strftime("%A %d %B %H:%M")}\n')
 
     file.write(readme_content)
