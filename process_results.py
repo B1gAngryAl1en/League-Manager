@@ -4,10 +4,15 @@ from League import League
 from datetime import datetime
 
 # set the league name
-league_name = "test league"
+league_name = "Test league"
 
-# set whether to update the readme.md file or not
+# set configuration for update the readme.md file
 update_readme = True
+
+add_overall_results = True
+add_ko_stage = True
+add_league_stage = True
+add_league_manager_info = True
 
 # set league points by result type
 league_pts = {'win': 3,
@@ -66,23 +71,42 @@ league_points_ls = standings_df['league points'].to_list()
 game_pts_ls = standings_df['game points'].to_list()
 
 if update_readme:
-    with open('input_data/readme_content.md', 'r') as file:
-        readme_content = file.read()
+    with open('readme_content/league_manager_notes.md', 'r') as file:
+        league_manager_notes = file.read()
+
+    with open('readme_content/overall_results.md', 'r') as file:
+        overall_results = file.read()
+
+    with open('readme_content/ko_stage_results.md') as file:
+        ko_stage_results = file.read()
 
     with open('readme.md', 'w') as file:
-        file.write(f'# {league_name}\n\n')
-        file.write('[Fixtures and results](input_data/fixtures.csv)\n\n')
-        file.write('|Player|played|league pts|game pts|\n')
-        file.write('|:---:|:---:|:---:|:---:|\n')
+        file.write(f'# **{league_name}**\n\n')
+        file.write(f'last updated {datetime.now().strftime("%A %d %B %H:%M")}\n\n')
+        file.write('---\n')
 
-        for idx, player in enumerate(player_ls):
-            file.write(f'|{player}|{played_ls[idx]}|{league_points_ls[idx]}|{game_pts_ls[idx]}|\n')
+        if add_overall_results:
+            file.write(overall_results)
+            file.write('\n')
 
-        file.write(f'\n[Full standings](output_data/{filename}_standings.csv), \n')
-        file.write(f'[Player performance records](output_data/{filename}_player_records.csv)\n\n')
-        file.write(f'[Player list and data](output_data/{filename}_player_data.csv), ')
-        file.write(f'[Raw results data](output_data/{filename}_all_results.csv)\n\n')
+        if add_ko_stage:
+            file.write(ko_stage_results)
+            file.write('\n')
 
-        file.write(f'\nlast updated {datetime.now().strftime("%A %d %B %H:%M")}\n')
+        if add_league_stage:
+            file.write('# League stage\n\n')
+            file.write('[Fixtures and results](input_data/fixtures.csv)\n\n')
+            file.write('|Player|played|league pts|game pts|\n')
+            file.write('|:---:|:---:|:---:|:---:|\n')
 
-        file.write(readme_content)
+            for idx, player in enumerate(player_ls):
+                file.write(f'|{player}|{played_ls[idx]}|{league_points_ls[idx]}|{game_pts_ls[idx]}|\n')
+
+            file.write(f'\n[Full standings](output_data/{filename}_standings.csv), \n')
+            file.write(f'[Player performance records](output_data/{filename}_player_records.csv)\n\n')
+            file.write(f'[Player list and data](output_data/{filename}_player_data.csv), ')
+            file.write(f'[Raw results data](output_data/{filename}_all_results.csv)\n\n')
+            file.write('---\n')
+
+        if add_league_manager_info:
+            file.write(league_manager_notes)

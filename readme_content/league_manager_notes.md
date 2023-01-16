@@ -1,4 +1,4 @@
-# League manager
+# League manager project
 
 ## Description
 
@@ -11,13 +11,24 @@ management of league style competitions.
 2. _(optional)_ create a local branch for the league you want to run.
 This may be useful for running multiple seasons of the same league,
 multiple brackets in the same competition etc.
-3. Add the name of the league on line 6 of the  process_results.py 
+3. Add the name of the league on line 7 of the  process_results.py 
 script and save the file.
-4. _(optional)_ adjust the league_pts dictionary in the 
-process_results.py file (lines 9 to 11) to set the league points for
+4. Set the options for readme file generation on lines 10 to 15. Options
+are listed below (all content files are in the readme_content folder).
+   - Update_readme - set if readme file will be regenerated or not.
+   - add_overall_results - add content of the overall_results.md file 
+   (update manually before running script).
+   - add_ko_stage - add content of the ko_stage_results.md file (update
+   manually before running script).
+   - add_league_stage - add auto generated league summary table and links
+   to output .csv files.
+   - add_league_manager_info - add content pf the league_manager_notes.md 
+   file.
+6. _(optional)_ adjust the league_pts dictionary in the 
+process_results.py file (lines 18 to 20) to set the league points for
 each type of result (by default win = 3 pts, draw = 1 pt, loss = 0 
 pts).
-5. Open the player_list.csv file in the input_data folder, add the 
+7. Open the player_list.csv file in the input_data folder, add the 
 data for players in the league and save it.
 
 ## Workflow
@@ -26,6 +37,7 @@ data for players in the league and save it.
 2. Add fixtures and scores as required (player names must match those
 in the player_list.csv file and the 'played' column must be populated
 with 'y' for the result to be read).
+Adjust readme file generation options (see set up).
 3. Save the file.
 4. Run the process_results.py script. 
 
@@ -68,3 +80,5 @@ The functions and methods of the League class (League.py file) are
 designed to be agnostic of the front end implementation. They 
 could thus be used with a pure python script or a text / graphical
 user interface.
+
+---
