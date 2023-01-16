@@ -6,6 +6,9 @@ from datetime import datetime
 # set the league name
 league_name = "test league"
 
+# set whether to update the readme.md file or not
+update_readme = True
+
 # set league points by result type
 league_pts = {'win': 3,
               'draw': 1,
@@ -62,23 +65,24 @@ played_ls = standings_df['played'].to_list()
 league_points_ls = standings_df['league points'].to_list()
 game_pts_ls = standings_df['game points'].to_list()
 
-with open('input_data/readme_content.md', 'r') as file:
-    readme_content = file.read()
+if update_readme:
+    with open('input_data/readme_content.md', 'r') as file:
+        readme_content = file.read()
 
-with open('readme.md', 'w') as file:
-    file.write(f'# {league_name}\n\n')
-    file.write('[Fixtures and results](input_data/fixtures.csv)\n\n')
-    file.write('|Player|played|league pts|game pts|\n')
-    file.write('|:---:|:---:|:---:|:---:|\n')
+    with open('readme.md', 'w') as file:
+        file.write(f'# {league_name}\n\n')
+        file.write('[Fixtures and results](input_data/fixtures.csv)\n\n')
+        file.write('|Player|played|league pts|game pts|\n')
+        file.write('|:---:|:---:|:---:|:---:|\n')
 
-    for idx, player in enumerate(player_ls):
-        file.write(f'|{player}|{played_ls[idx]}|{league_points_ls[idx]}|{game_pts_ls[idx]}|\n')
+        for idx, player in enumerate(player_ls):
+            file.write(f'|{player}|{played_ls[idx]}|{league_points_ls[idx]}|{game_pts_ls[idx]}|\n')
 
-    file.write(f'\n[Full standings](output_data/{filename}_standings.csv), \n')
-    file.write(f'[Player performance records](output_data/{filename}_player_records.csv)\n\n')
-    file.write(f'[Player list and data](output_data/{filename}_player_data.csv), ')
-    file.write(f'[Raw results data](output_data/{filename}_all_results.csv)\n\n')
+        file.write(f'\n[Full standings](output_data/{filename}_standings.csv), \n')
+        file.write(f'[Player performance records](output_data/{filename}_player_records.csv)\n\n')
+        file.write(f'[Player list and data](output_data/{filename}_player_data.csv), ')
+        file.write(f'[Raw results data](output_data/{filename}_all_results.csv)\n\n')
 
-    file.write(f'\nlast updated {datetime.now().strftime("%A %d %B %H:%M")}\n')
+        file.write(f'\nlast updated {datetime.now().strftime("%A %d %B %H:%M")}\n')
 
-    file.write(readme_content)
+        file.write(readme_content)
