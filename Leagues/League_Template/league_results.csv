@@ -1,4 +1,4 @@
-date,round,game,player_a,player_a_sc,player_b,player_b_sc,played
+date,round,game,player_a,player_a_sc,player_b,player_b_sc,add
 01/01/23,1,1,Player_A_Name,100,Player_B_NAME,0,y
 ,1,2,player_c_name,100,player_d_name,0,y
 ,,,,,,,

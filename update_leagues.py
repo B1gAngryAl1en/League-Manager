@@ -1,6 +1,6 @@
 import pandas as pd
 
-from League import League
+from league_class import League
 from datetime import datetime
 
 # set the league name
