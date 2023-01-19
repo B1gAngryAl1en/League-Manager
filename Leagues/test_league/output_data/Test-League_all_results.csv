@@ -1,0 +1,13 @@
+round,game,player,pts for,pts against,delta,result
+1.0,1.0,player_a_name,100.0,0.0,100.0,win
+1.0,1.0,player_b_name,0.0,100.0,-100.0,loss
+1.0,2.0,player_c_name,100.0,0.0,100.0,win
+1.0,2.0,player_d_name,0.0,100.0,-100.0,loss
+2.0,1.0,player_a_name,100.0,0.0,100.0,win
+2.0,1.0,player_c_name,0.0,100.0,-100.0,loss
+2.0,2.0,player_b_name,100.0,0.0,100.0,win
+2.0,2.0,player_d_name,0.0,100.0,-100.0,loss
+3.0,1.0,player_a_name,73.0,53.0,20.0,win
+3.0,1.0,player_d_name,53.0,73.0,-20.0,loss
+3.0,2.0,player_b_name,89.0,21.0,68.0,win
+3.0,2.0,player_c_name,21.0,89.0,-68.0,loss

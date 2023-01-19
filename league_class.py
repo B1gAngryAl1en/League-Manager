@@ -11,9 +11,9 @@ class League:
 
         self.result_col_lbl = ['round', 'game', 'player', 'pts for', 'pts against', 'delta', 'result']
         self.results_data_df = pd.DataFrame(columns=self.result_col_lbl)
-        self.player_col_lbl = ['name', 'faction', 'notes']
+        self.player_col_lbl = ['name', 'team', 'notes']
         self.player_data_df = pd.DataFrame(columns=self.player_col_lbl)
-        self.add_player(name='none', faction='', note='null player for bye result etc')
+        self.add_player(name='none', team='', note='null player for bye result etc')
 
     def load_league_data(self) -> bool:
         data_loaded = False
@@ -46,11 +46,11 @@ class League:
 
         return num_players
 
-    def add_player(self, name: str, faction: str, note: str) -> bool:
+    def add_player(self, name: str, team: str, note: str) -> bool:
         player_added = False
         name = name.lower()
 
-        player_data = [[name, faction, note]]
+        player_data = [[name, team, note]]
         if not self.player_check(name):
             new_player_df = pd.DataFrame(data=player_data, columns=self.player_col_lbl)
             self.player_data_df = pd.concat(objs=[self.player_data_df, new_player_df], ignore_index=True)

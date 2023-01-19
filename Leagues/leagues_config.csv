@@ -1,3 +1,2 @@
-league name,data folder,win pts,draw pts,loss pts,update
-Dice 40k Season 2,Dice40k_S2,3,1,0,y
-Dice 40k Season 3,Dice40k_S3,3,1,0,y
+league_name,data_folder,win_pts,draw_pts,loss_pts,update
+Test League,test_league,3,1,0,y
