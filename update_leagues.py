@@ -6,7 +6,7 @@ from datetime import datetime
 league_config_df = pd.read_csv('Leagues/leagues_config.csv')
 
 for league_idx, league_name in enumerate(league_config_df['league_name'].to_list()):
-    if league_config_df.loc[league_idx]['update'].lower() == 'y':
+    if str(league_config_df.loc[league_idx]['update']).lower() == 'y':
         print(f'Updating {league_name}')
         data_folder = league_config_df.loc[league_idx]['data_folder']
 
@@ -50,7 +50,7 @@ for league_idx, league_name in enumerate(league_config_df['league_name'].to_list
         # export files
         filename = league_name.replace(" ", "-")
         player_data_df.to_csv(f'Leagues/{data_folder}/output_data/{filename}_player_data.csv', index=False)
-        standings_df.to_csv(f'Leagues/{data_folder}/output_data/{filename}{filename}_standings.csv', index=False)
+        standings_df.to_csv(f'Leagues/{data_folder}/output_data/{filename}_standings.csv', index=False)
         all_results_df.to_csv(f'Leagues/{data_folder}/output_data/{filename}_all_results.csv', index=False)
         player_records_df.to_csv(f'Leagues/{data_folder}/output_data/{filename}_player_records.csv', index=False)
 
@@ -60,17 +60,30 @@ for league_idx, league_name in enumerate(league_config_df['league_name'].to_list
 
         with open(f'Leagues/{data_folder}/output_data/league_page.md', 'w') as file:
 
-            file.write(f'# **{league_name}**\n\n')
+            file.write(f'# {league_name}\n\n')
             file.write(f'last updated {datetime.now().strftime("%A %d %B %H:%M")}\n\n')
             file.write('---\n')
 
             if 'y' in overall_results_df['add'].to_list() or 'Y' in overall_results_df['add'].to_list():
-                file.write('# overall_results \n\n')
+                file.write('## Overall Results \n\n')
+                for overall_idx, placing in enumerate(overall_results_df['placing'].to_list()):
+                    if str(overall_results_df.loc[overall_idx]['add']).lower() == 'y':
+                        file.write(f'{placing} - {overall_results_df.loc[overall_idx]["player_name"]}\n\n')
+                file.write('---\n\n')
 
             if 'y' in ko_stage_results_df['add'].to_list() or 'Y' in overall_results_df['add'].to_list():
-                file.write('# ko stage results \n\n')
+                file.write('## Knockout Stage Results \n\n')
+                for ko_idx, ko_game in enumerate(ko_stage_results_df['game'].to_list()):
+                    if str(ko_stage_results_df.loc[ko_idx]['add']).lower() == 'y':
+                        ko_pa = ko_stage_results_df.loc[ko_idx]['player_a']
+                        ko_pa_sc = ko_stage_results_df.loc[ko_idx]['player_a_score']
+                        ko_pb = ko_stage_results_df.loc[ko_idx]['player_b']
+                        ko_pb_sc = ko_stage_results_df.loc[ko_idx]['player_b_score']
+                        game_note = ko_stage_results_df.loc[ko_idx]['game_note']
+                        file.write(f'{ko_game}: {ko_pa} ({ko_pa_sc}) vs. {ko_pb} ({ko_pb_sc}) {game_note}\n\n')
+                file.write('---\n\n')
 
-            file.write('# League stage\n\n')
+            file.write('## League Standings\n\n')
             file.write(f'[Fixtures and results](/Leagues/{data_folder}/league_results.csv)\n\n')
             file.write('|Pos|Player|played|league pts|game pts|\n')
             file.write('|:---:|:---:|:---:|:---:|:---:|\n')
@@ -84,8 +97,8 @@ for league_idx, league_name in enumerate(league_config_df['league_name'].to_list
             for pos_idx, pos in enumerate(pos_ls):
                 file.write(f'|{pos}|{player_ls[pos_idx]}|{played_ls[pos_idx]}|'
                            f'{league_pts_ls[pos_idx]}|{game_pts_ls[pos_idx]}|\n')
-
-            file.write(f'\n[Full standings]'
+            file.write('\n')
+            file.write(f'[Full standings]'
                        f'(/Leagues/{data_folder}/output_data/{filename}_standings.csv)\n\n')
             file.write(f'[Player performance records]'
                        f'(/Leagues/{data_folder}/output_data/{filename}_player_records.csv)\n\n')
@@ -93,35 +106,6 @@ for league_idx, league_name in enumerate(league_config_df['league_name'].to_list
                        f'(/Leagues/{data_folder}/output_data/{filename}_player_data.csv)\n\n')
             file.write(f'[Raw results data]'
                        f'(/Leagues/{data_folder}/output_data/{filename}_all_results.csv)\n\n')
-            file.write('---\n')
+            file.write('---\n\n')
+            file.write('powered by [League Manager](/league_manager_project.md)')
         print(f"Update of {league_name} complete")
-
-
-
-
-# generate an update readme file
-#player_ls = standings_df['player'].to_list()
-#played_ls = standings_df['played'].to_list()
-#league_points_ls = standings_df['league points'].to_list()
-#game_pts_ls = standings_df['game points'].to_list()
-
-#if update_readme:
-#    with open('readme_content/league_manager_notes.md', 'r') as file:
-#        league_manager_notes = file.read()#
-
-#
-#        overall_results = file.read()#
-
-#    with open('readme_content/ko_stage_results.md') as file:
- #       ko_stage_results = file.read()
-
-  #  with open('readme.md', 'w') as file:
-   #
-       #     file.write(f'\n[Full standings](output_data/{filename}_standings.csv), \n')
-        #    file.write(f'[Player performance records](output_data/{filename}_player_records.csv)\n\n')
-         #   file.write(f'[Player list and data](output_data/{filename}_player_data.csv), ')
-         #   file.write(f'[Raw results data](output_data/{filename}_all_results.csv)\n\n')
-          #  file.write('---\n')
-
-#        if add_league_manager_info:
- #           file.write(league_manager_notes)

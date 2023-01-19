@@ -1,1 +1,4 @@
 game,player_a,player_a_score,player_b,player_b_score,game_note,add
+Grand Final,Player_a_name,95,player_b_name,85,-> player_a_name,y
+Semi Final 1,Player_a_name,95,player_c_name,83,-> player_a_name,y
+Semi Final 2,player_b_name,96,player_d_name,76,-> player_b_name,y
