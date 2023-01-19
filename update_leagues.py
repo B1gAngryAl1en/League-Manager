@@ -109,3 +109,16 @@ for league_idx, league_name in enumerate(league_config_df['league_name'].to_list
             file.write('---\n\n')
             file.write('powered by [League Manager](/league_manager_project.md)')
         print(f"Update of {league_name} complete")
+
+with open(f'readme.md', 'w') as file:
+    file.write('# Current leagues:\n\n')
+    for lge_idx, league_name in enumerate(league_config_df['league_name'].to_list()):
+        file.write(f'[{league_name}]'
+                   f'(/Leagues/{league_config_df.loc[lge_idx]["data_folder"]}/output_data/league_page.md)\n\n')
+
+    file.write('---\n\n')
+    file.write('# League Manager Project\n\n')
+    file.write('The league manager project is intended to provide a simple automated solution for '
+               'management of league style competitions. \n\n')
+    file.write('More information on the project can be found [here](/league_manager_project.md)\n\n')
+    file.write('---')

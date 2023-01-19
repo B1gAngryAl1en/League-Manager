@@ -1,6 +1,6 @@
 # Test League
 
-last updated Thursday 19 January 22:54
+last updated Thursday 19 January 23:10
 
 ---
 ## Overall Results 
