@@ -1,6 +1,6 @@
 # Dice 40k Season 3
 
-last updated Sunday 22 January 16:21
+last updated Sunday 22 January 16:30
 
 ---
 ## League Standings

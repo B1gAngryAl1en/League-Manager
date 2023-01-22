@@ -8,7 +8,7 @@ management of league style competitions.
 ## Set up a League
 
 1. Fork the repository.
-2. Open the 'Leagues' and create a copy of the League_Template folder.
+2. Open the 'Leagues' folder and create a copy of the League_Template folder.
 3. Give the copy a suitable name.
 4. (_Optional_) delete the folders for any existing leagues that are not required.
 5. Open the player_list.csv file and add data for the players in the league.
@@ -21,13 +21,13 @@ existing leagues for the required data formatting)_.
 update column will cause the league to be updated by the update_league.py script.
 9. Run the update_leagues.py script. This will generate output files in the
 output_data folder within the league folder (see output files section below)
-The readme file will also be updated with links to the summary page for each 
+The readme.md file will also be updated with links to the summary page for each 
  league within the leagues folder.
 
 ## Workflow
 
 1. Update the league_results.csv, ko_stage_results.csv or overall_results.csv
-files for the required leagues within their individual folders.
+files for the required leagues (files located within their individual league folders).
 2. Open the leagues_config.csv file and select the leagues to be updated by entering
 'y' in the update column on the appropriate rows.
 3. Run the update_leagues.py script.
@@ -36,7 +36,7 @@ the 'output_data' folder within the folder for any individual league.
 
 ## Output files
 
-All within the 'output_data' folder within the league folder.
+All within the 'output_data' folder within the league folder:
 
 * league_page.md - Summary of the league results including the overall results,
 knockout and league stages.

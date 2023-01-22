@@ -79,7 +79,10 @@ for league_idx, league_name in enumerate(league_config_df['league_name'].to_list
                         ko_pa_sc = ko_stage_results_df.loc[ko_idx]['player_a_score']
                         ko_pb = ko_stage_results_df.loc[ko_idx]['player_b']
                         ko_pb_sc = ko_stage_results_df.loc[ko_idx]['player_b_score']
-                        game_note = ko_stage_results_df.loc[ko_idx]['game_note']
+                        if pd.notnull(ko_stage_results_df.loc[ko_idx]['game_note']):
+                            game_note = ko_stage_results_df.loc[ko_idx]['game_note']
+                        else:
+                            game_note = ''
                         file.write(f'{ko_game}: {ko_pa} ({ko_pa_sc}) vs. {ko_pb} ({ko_pb_sc}) {game_note}\n\n')
                 file.write('---\n\n')
 

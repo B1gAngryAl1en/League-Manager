@@ -1,6 +1,6 @@
 # Dice 40k Season 2
 
-last updated Sunday 22 January 16:21
+last updated Sunday 22 January 16:30
 
 ---
 ## Overall Results 
@@ -23,7 +23,7 @@ League stage runner up - Ethan H
 
 Grand Final: Chris A (74) vs. Ben W (74) (decided by league position)
 
-Play off: Weir Z (91) vs. Ethan H (64) nan
+Play off: Weir Z (91) vs. Ethan H (64) 
 
 Semi final 1: Ben W (85) vs. Ethan H (69) -> Ben W
 
