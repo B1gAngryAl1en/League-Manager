@@ -1,8 +1,24 @@
 # Dice 40k Season 3
 
-last updated Sunday 22 January 16:30
+last updated Sunday 22 January 16:44
 
 ---
+## Overall Results 
+
+League stage winner - Andy S
+
+League stage runner up - Ethan H
+
+---
+
+## Knockout Stage Results 
+
+Semi final 1: Andy S (nan) vs. Andy B (nan) 
+
+Semi final 2: Ethan H (nan) vs. Weir Z (nan) 
+
+---
+
 ## League Standings
 
 [Fixtures and results](/Leagues/Dice40k_S3/league_results.csv)

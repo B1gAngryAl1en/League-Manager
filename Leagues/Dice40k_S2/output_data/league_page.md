@@ -1,6 +1,6 @@
 # Dice 40k Season 2
 
-last updated Sunday 22 January 16:30
+last updated Sunday 22 January 16:44
 
 ---
 ## Overall Results 
