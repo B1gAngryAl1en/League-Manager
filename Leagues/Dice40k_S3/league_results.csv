@@ -1,0 +1,56 @@
+date,round,game,player_a,player_a_sc,player_b,player_b_sc,add
+24/11/23,1,1,Weir Z,100,none,0,y
+,1,2,Andy B,92,Ben W,72,y
+,1,3,Chris A,73,Andy S,93,y
+,1,4,Chris H,49,Ethan H,83,y
+,1,5,Mark A,18,Edmund D,100,y
+,1,6,Dan W,78,Matt A,73,y
+,,,,,,,
+01/12/23,2,1,Ben W,100,none,0,y
+,2,2,Andy B,50,Andy S,50,y
+,2,3,Matt A,50,Edmund D,50,y
+,2,4,Dan W,81,Mark A,61,y
+,2,5,Chris A,82,Ethan H,52,y
+,2,6,Weir Z,76,Chris H,46,y
+,,,,,,,
+08/12/23,3,1,Mark A,100,none,0,y
+,3,2,Andy B,69,Ethan H,84,y
+,3,3,Chris A,90,Chris H,29,y
+,3,4,Dan W,50,Andy S,91,y
+,3,5,Ben W,76,Edmund D,75,y
+,3,6,Matt A,57,Weir Z,79,y
+,,,,,,,
+15/12/23,4,1,Andy B,100,none,0,y
+,4,2,Edmund D,100,Chris H,0,y
+,4,3,Ben W,92,Dan W,62,y
+,4,4,Weir Z,97,Chris A,46,y
+,4,5,Matt A,96,Ethan H,81,y
+,4,6,Andy S,97,Mark A,44,y
+,,,,,,,
+22/12/23,5,1,Matt A,100,none,0,y
+,5,2,Chris H,100,Mark A,0,y
+,5,3,Andy S,100,Edmund D,0,y
+,5,4,Dan W,83,Andy B,97,y
+,5,5,Ben W,38,Chris A,100,y
+,5,6,Weir Z,53,Ethan H,99,y
+,,,,,,,
+05/01/23,6,1,Chris A,100,none,0,y
+,6,2,Ethan H,95,Mark A,58,y
+,6,3,Dan W,48,Edmund D,90,y
+,6,4,Andy S,60,Weir Z,85,y
+,6,5,Matt A,59,Andy B,89,y
+,6,6,Ben W,97,Chris H,50,y
+,,,,,,,
+12/01/23,7,1,Ethan H,100,none,0,y
+,7,2,Mark A,58,Andy B,94,y
+,7,3,Andy S,93,Matt A,62,y
+,7,4,Edmund D,83,Chris A,79,y
+,7,5,Ben W,97,Weir Z,44,y
+,7,6,Dan W,0,Chris H,100,y
+,,,,,,,
+19/01/23,8,1,Chris H,100,none,0,y
+,8,2,Andy S,100,Ben W,0,y
+,8,3,Edmund D,0,Weir Z,100,y
+,8,4,Matt A,88,Mark A,56,y
+,8,5,Chris A,93,Andy B,83,y
+,8,6,Ethan H,100,Dan W,0,y

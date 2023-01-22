@@ -1,0 +1,48 @@
+date,round,game,player_a,player_a_sc,player_b,player_b_sc,add
+04/08/22,1,1,Chris A,100,none,0,y
+,1,2,Andy B,67,Ben W,87,y
+,1,3,Dan W,96,Taylor B,88,y
+,1,4,Weir Z,92,Ethan H,50,y
+,1,5,Mark A,54,Matt A,89,y
+,,,,,,,
+11/08/22,2,1,Ben W,100,none,0,y
+,2,2,Taylor B,43,Chris A,92,y
+,2,3,Ethan H,87,Andy B,75,y
+,2,4,Matt A,62,Dan W,90,y
+,2,5,Mark A,56,Weir Z,86,y
+,,,,,,,
+18/08/22,3,1,Andy B,100,none,0,y
+,3,2,Dan W,35,Chris A,95,y
+,3,3,Weir Z,76,Ben W,70,y
+,3,4,Mark A,92,Taylor B,65,y
+,3,5,Matt A,78,Ethan H,85,y
+,,,,,,,
+27/08/22,4,1,Ethan H,100,none,0,y
+,4,2,Matt A,88,Taylor B,92,y
+,4,3,Mark A,55,Ben W,58,y
+,4,4,Weir Z,92,Chris A,26,y
+,4,5,Dan W,85,Andy B,76,y
+,,,,,,,
+01/09/22,5,1,Weir Z,100,none,0,y
+,5,2,Mark A,84,Dan W,86,y
+,5,3,Matt A,100,Andy B,0,y
+,5,4,Ethan H,58,Chris A,95,y
+,5,5,Taylor B,31,Ben W,91,y
+,,,,,,,
+08/09/22,6,1,Mark A,100,none,0,y
+,6,2,Weir Z,94,Matt A,31,y
+,6,3,Dan W,40,Ethan H,100,y
+,6,4,Andy B,93,Taylor B,27,y
+,6,5,Chris A,74,Ben W,72,y
+,,,,,,,
+15/09/22,7,1,Matt A,100,none,0,y
+,7,2,Ethan H,97,Mark A,69,y
+,7,3,Weir Z,92,Taylor B,44,y
+,7,4,Ben W,92,Dan W,48,y
+,7,5,Chris A,86,Andy B,81,y
+,,,,,,,
+22/09/22,8,1,Dan W,100,none,0,y
+,8,2,Andy B,72,Weir Z,80,y
+,8,3,Chris A,0,Mark A,100,y
+,8,4,Ben W,96,Matt A,54,y
+,8,5,Taylor B,65,Ethan H,92,y

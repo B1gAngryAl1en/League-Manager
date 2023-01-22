@@ -1,0 +1,82 @@
+player,round,opponent,result,league pts,game pts,game pts delta,cumulative league pts,cumulative game pts,cumulative game pts delta
+weir z,1.0,ethan h,win,3,92.0,42.0,3,92.0,42.0
+weir z,2.0,mark a,win,3,86.0,30.0,6,178.0,72.0
+weir z,3.0,ben w,win,3,76.0,6.0,9,254.0,78.0
+weir z,4.0,chris a,win,3,92.0,66.0,12,346.0,144.0
+weir z,5.0,none,win,3,100.0,100.0,15,446.0,244.0
+weir z,6.0,matt a,win,3,94.0,63.0,18,540.0,307.0
+weir z,7.0,taylor b,win,3,92.0,48.0,21,632.0,355.0
+weir z,8.0,andy b,win,3,80.0,8.0,24,712.0,363.0
+,,,,,,,,,
+ethan h,1.0,weir z,loss,0,50.0,-42.0,0,50.0,-42.0
+ethan h,2.0,andy b,win,3,87.0,12.0,3,137.0,-30.0
+ethan h,3.0,matt a,win,3,85.0,7.0,6,222.0,-23.0
+ethan h,4.0,none,win,3,100.0,100.0,9,322.0,77.0
+ethan h,5.0,chris a,loss,0,58.0,-37.0,9,380.0,40.0
+ethan h,6.0,dan w,win,3,100.0,60.0,12,480.0,100.0
+ethan h,7.0,mark a,win,3,97.0,28.0,15,577.0,128.0
+ethan h,8.0,taylor b,win,3,92.0,27.0,18,669.0,155.0
+,,,,,,,,,
+ben w,1.0,andy b,win,3,87.0,20.0,3,87.0,20.0
+ben w,2.0,none,win,3,100.0,100.0,6,187.0,120.0
+ben w,3.0,weir z,loss,0,70.0,-6.0,6,257.0,114.0
+ben w,4.0,mark a,win,3,58.0,3.0,9,315.0,117.0
+ben w,5.0,taylor b,win,3,91.0,60.0,12,406.0,177.0
+ben w,6.0,chris a,loss,0,72.0,-2.0,12,478.0,175.0
+ben w,7.0,dan w,win,3,92.0,44.0,15,570.0,219.0
+ben w,8.0,matt a,win,3,96.0,42.0,18,666.0,261.0
+,,,,,,,,,
+chris a,1.0,none,win,3,100.0,100.0,3,100.0,100.0
+chris a,2.0,taylor b,win,3,92.0,49.0,6,192.0,149.0
+chris a,3.0,dan w,win,3,95.0,60.0,9,287.0,209.0
+chris a,4.0,weir z,loss,0,26.0,-66.0,9,313.0,143.0
+chris a,5.0,ethan h,win,3,95.0,37.0,12,408.0,180.0
+chris a,6.0,ben w,win,3,74.0,2.0,15,482.0,182.0
+chris a,7.0,andy b,win,3,86.0,5.0,18,568.0,187.0
+chris a,8.0,mark a,loss,0,0.0,-100.0,18,568.0,87.0
+,,,,,,,,,
+dan w,1.0,taylor b,win,3,96.0,8.0,3,96.0,8.0
+dan w,2.0,matt a,win,3,90.0,28.0,6,186.0,36.0
+dan w,3.0,chris a,loss,0,35.0,-60.0,6,221.0,-24.0
+dan w,4.0,andy b,win,3,85.0,9.0,9,306.0,-15.0
+dan w,5.0,mark a,win,3,86.0,2.0,12,392.0,-13.0
+dan w,6.0,ethan h,loss,0,40.0,-60.0,12,432.0,-73.0
+dan w,7.0,ben w,loss,0,48.0,-44.0,12,480.0,-117.0
+dan w,8.0,none,win,3,100.0,100.0,15,580.0,-17.0
+,,,,,,,,,
+mark a,1.0,matt a,loss,0,54.0,-35.0,0,54.0,-35.0
+mark a,2.0,weir z,loss,0,56.0,-30.0,0,110.0,-65.0
+mark a,3.0,taylor b,win,3,92.0,27.0,3,202.0,-38.0
+mark a,4.0,ben w,loss,0,55.0,-3.0,3,257.0,-41.0
+mark a,5.0,dan w,loss,0,84.0,-2.0,3,341.0,-43.0
+mark a,6.0,none,win,3,100.0,100.0,6,441.0,57.0
+mark a,7.0,ethan h,loss,0,69.0,-28.0,6,510.0,29.0
+mark a,8.0,chris a,win,3,100.0,100.0,9,610.0,129.0
+,,,,,,,,,
+matt a,1.0,mark a,win,3,89.0,35.0,3,89.0,35.0
+matt a,2.0,dan w,loss,0,62.0,-28.0,3,151.0,7.0
+matt a,3.0,ethan h,loss,0,78.0,-7.0,3,229.0,0.0
+matt a,4.0,taylor b,loss,0,88.0,-4.0,3,317.0,-4.0
+matt a,5.0,andy b,win,3,100.0,100.0,6,417.0,96.0
+matt a,6.0,weir z,loss,0,31.0,-63.0,6,448.0,33.0
+matt a,7.0,none,win,3,100.0,100.0,9,548.0,133.0
+matt a,8.0,ben w,loss,0,54.0,-42.0,9,602.0,91.0
+,,,,,,,,,
+andy b,1.0,ben w,loss,0,67.0,-20.0,0,67.0,-20.0
+andy b,2.0,ethan h,loss,0,75.0,-12.0,0,142.0,-32.0
+andy b,3.0,none,win,3,100.0,100.0,3,242.0,68.0
+andy b,4.0,dan w,loss,0,76.0,-9.0,3,318.0,59.0
+andy b,5.0,matt a,loss,0,0.0,-100.0,3,318.0,-41.0
+andy b,6.0,taylor b,win,3,93.0,66.0,6,411.0,25.0
+andy b,7.0,chris a,loss,0,81.0,-5.0,6,492.0,20.0
+andy b,8.0,weir z,loss,0,72.0,-8.0,6,564.0,12.0
+,,,,,,,,,
+taylor b,1.0,dan w,loss,0,88.0,-8.0,0,88.0,-8.0
+taylor b,2.0,chris a,loss,0,43.0,-49.0,0,131.0,-57.0
+taylor b,3.0,mark a,loss,0,65.0,-27.0,0,196.0,-84.0
+taylor b,4.0,matt a,win,3,92.0,4.0,3,288.0,-80.0
+taylor b,5.0,ben w,loss,0,31.0,-60.0,3,319.0,-140.0
+taylor b,6.0,andy b,loss,0,27.0,-66.0,3,346.0,-206.0
+taylor b,7.0,weir z,loss,0,44.0,-48.0,3,390.0,-254.0
+taylor b,8.0,ethan h,loss,0,65.0,-27.0,3,455.0,-281.0
+,,,,,,,,,
