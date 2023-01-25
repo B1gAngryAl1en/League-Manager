@@ -1,11 +1,11 @@
 # Dice 40k Season 1
 
-last updated Wednesday 25 January 00:07
+last updated Wednesday 25 January 00:20
 
 ---
 ## Overall Results 
 
-Overall champion - Weir Z
+Overall Champion - Weir Z
 
 Runner up - Andy S
 
@@ -17,7 +17,7 @@ League stage runner up - Weir Z
 
 ## Knockout Stage Results 
 
-Grand final: Weir Z (75 ish) vs. Andy S (61 ish) 
+Grand Final: Weir Z (75 ish) vs. Andy S (61 ish) 
 
 Semi final 1: Andy S (100) vs. Chris A (0) -> Andy S (not played)
 

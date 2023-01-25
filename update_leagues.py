@@ -116,8 +116,12 @@ for league_idx, league_name in enumerate(league_config_df['league_name'].to_list
 with open(f'readme.md', 'w') as file:
     file.write('# Current leagues:\n\n')
     for lge_idx, league_name in enumerate(league_config_df['league_name'].to_list()):
+        if pd.notnull(league_config_df.loc[lge_idx]['ad text']):
+            ad_txt = league_config_df.loc[lge_idx]['ad text']
+        else:
+            ad_txt = ''
         file.write(f'[{league_name}]'
-                   f'(/Leagues/{league_config_df.loc[lge_idx]["data_folder"]}/output_data/league_page.md)\n\n')
+                   f'(/Leagues/{league_config_df.loc[lge_idx]["data_folder"]}/output_data/league_page.md) {ad_txt}\n\n')
 
     file.write('---\n\n')
     file.write('# League Manager Project\n\n')
