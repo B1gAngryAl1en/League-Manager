@@ -1,0 +1,48 @@
+date,round,game,player_a,player_a_sc,player_b,player_b_sc,add
+,1,1,Weir Z,100,none,0,y
+,1,2,Taylor B,84,Matt A,78,y
+,1,3,Dan W,43,Mohammed F,96,y
+,1,4,Mark A,45,Andy S,84,y
+,1,5,Andy B,65,Chris A,97,y
+,,,,,,,
+,2,1,Weir Z,52,Mohammed F,0,y
+,2,2,Matt A,58,Andy S,78,y
+,2,3,none,0,Chris A,100,y
+,2,4,Taylor B,70,Andy B,66,y
+,2,5,Dan W,88,Mark A,35,y
+,,,,,,,
+,3,1,Weir Z,55,Chris A,97,y
+,3,2,Andy S,85,Andy B,63,y
+,3,3,Mohammed F,92,Mark A,23,y
+,3,4,Matt A,43,Dan W,84,y
+,3,5,none,0,Taylor B,100,y
+,,,,,,,
+,4,1,Weir Z,65,Andy S,89,y
+,4,2,Mohammed F,27,Chris A,100,y
+,4,3,Matt A,96,Andy B,64,y
+,4,4,none,0,Mark A,100,y
+,4,5,Taylor B,91,Dan W,75,y
+,,,,,,,
+,5,1,Weir Z,94,Mark A,49,y
+,5,2,Andy B,0,Dan W,100,y
+,5,3,Chris A,91,Taylor B,90,y
+,5,4,Andy S,100,none,0,y
+,5,5,Mohammed F,94,Matt A,32,y
+,,,,,,,
+,6,1,Weir Z,92,Matt A,32,y
+,6,2,none,0,Mohammed F,100,y
+,6,3,Taylor B,59,Andy S,29,y
+,6,4,Dan W,37,Chris A,94,y
+,6,5,Mark A,50,Andy B,50,y
+,,,,,,,
+,7,1,Weir Z,94,Taylor B,29,y
+,7,2,Dan W,100,none,0,y
+,7,3,Mark A,60,Matt A,98,y
+,7,4,Andy B,41,Mohammed F,97,y
+,7,5,Chris A,97,Andy S,29,y
+,,,,,,,
+,8,1,Weir Z,89,Dan W,61,y
+,8,2,Mark A,41,Taylor B,86,y
+,8,3,Andy B,100,none,0,y
+,8,4,Chris A,90,Matt A,62,y
+,8,5,Andy S,91,Mohammed F,63,y

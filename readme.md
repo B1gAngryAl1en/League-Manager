@@ -4,6 +4,8 @@
 
 [Dice 40k Season 2](/Leagues/Dice40k_S2/output_data/league_page.md)
 
+[Dice 40k Season 1](/Leagues/Dice40k_S1/output_data/league_page.md)
+
 ---
 
 # League Manager Project
