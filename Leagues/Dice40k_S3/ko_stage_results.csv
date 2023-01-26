@@ -1,5 +1,5 @@
 game,player_a,player_a_score,player_b,player_b_score,game_note,add
-Grand final,,,,,,
-Play off,,,,,,
-Semi final 1,Andy S,,Andy B,,,y
-Semi final 2,Ethan H,,Weir Z,,,y
+Grand final,Andy S,,Weir Z,,,y
+Play off,Ethan H,,Andy B,,,y
+Semi final 1,Andy S,87,Andy B,81,-> Andy S,y
+Semi final 2,Ethan H,64,Weir Z,95,-> Weir Z,y

@@ -1,6 +1,6 @@
 # Dice 40k Season 3
 
-last updated Wednesday 25 January 00:20
+last updated Thursday 26 January 22:17
 
 ---
 ## Overall Results 
@@ -13,9 +13,13 @@ League stage runner up - Ethan H
 
 ## Knockout Stage Results 
 
-Semi final 1: Andy S (nan) vs. Andy B (nan) 
+Grand final: Andy S (nan) vs. Weir Z (nan) 
 
-Semi final 2: Ethan H (nan) vs. Weir Z (nan) 
+Play off: Ethan H (nan) vs. Andy B (nan) 
+
+Semi final 1: Andy S (87.0) vs. Andy B (81.0) -> Andy S
+
+Semi final 2: Ethan H (64.0) vs. Weir Z (95.0) -> Weir Z
 
 ---
 
