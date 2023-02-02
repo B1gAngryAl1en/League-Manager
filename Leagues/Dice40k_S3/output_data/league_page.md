@@ -1,9 +1,17 @@
 # Dice 40k Season 3
 
-last updated Thursday 26 January 22:17
+last updated Thursday 02 February 22:31
 
 ---
 ## Overall Results 
+
+Overall Champion - Weir 'two time people's champion' Z
+
+Runner up - Andy S
+
+Third place - Andy B
+
+Fourth place - Ethan H
 
 League stage winner - Andy S
 
@@ -13,13 +21,13 @@ League stage runner up - Ethan H
 
 ## Knockout Stage Results 
 
-Grand final: Andy S (nan) vs. Weir Z (nan) 
+Grand final: Andy S (71) vs. Weir Z (86) 
 
-Play off: Ethan H (nan) vs. Andy B (nan) 
+Play off: Ethan H (75) vs. Andy B (87) 
 
-Semi final 1: Andy S (87.0) vs. Andy B (81.0) -> Andy S
+Semi final 1: Andy S (87) vs. Andy B (81) -> Andy S
 
-Semi final 2: Ethan H (64.0) vs. Weir Z (95.0) -> Weir Z
+Semi final 2: Ethan H (64) vs. Weir Z (95) -> Weir Z
 
 ---
 
