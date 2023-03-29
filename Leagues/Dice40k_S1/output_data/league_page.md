@@ -1,6 +1,6 @@
 # Dice 40k Season 1
 
-last updated Wednesday 25 January 00:20
+last updated Wednesday 29 March 17:58
 
 ---
 ## Overall Results 

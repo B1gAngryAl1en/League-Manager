@@ -1,6 +1,6 @@
 # Dice 40k Season 3
 
-last updated Thursday 02 February 22:31
+last updated Wednesday 29 March 17:58
 
 ---
 ## Overall Results 
